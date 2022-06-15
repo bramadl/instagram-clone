@@ -1,5 +1,3 @@
-import React from "react";
-
 function Tray(props) {
   const { children, hasUnseenTray } = props;
 

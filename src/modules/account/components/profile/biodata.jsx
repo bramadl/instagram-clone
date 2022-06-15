@@ -1,5 +1,3 @@
-import React from "react";
-
 function Biodata(props) {
   const { username, biodata, website } = props;
   

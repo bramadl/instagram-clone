@@ -1,4 +1,3 @@
-import React from "react";
 import AddIcon from "../../../../libs/components/icons/AddIcon";
 
 function CreatePostButton() {

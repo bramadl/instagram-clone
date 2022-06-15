@@ -1,4 +1,3 @@
-import React from "react";
 import ChevronDownIcon from "../../../../libs/components/icons/ChevronDownIcon";
 
 function UsernameDropdown(props) {

@@ -1,5 +1,3 @@
-import React from 'react'
-
 function PostImage(props) {
   const { src } = props;
   

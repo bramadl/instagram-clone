@@ -1,5 +1,3 @@
-import React from "react";
-
 function Information(props) {
   const {
     postsCount,
