@@ -8,7 +8,6 @@ import MenuButton from "../../../modules/account/components/profile/MenuButton";
 import ChevronDownIcon from "../../../libs/components/icons/ChevronDownIcon";
 import ProfileNav from "../layouts/ProfileNav";
 import ProfileHeader from "../layouts/ProfileHeader";
-import Tray from "../../../modules/story/Tray";
 import Avatar from "../../../libs/components/Avatar";
 import Information from "../../../modules/account/components/profile/Information";
 import Biodata from "../../../modules/account/components/profile/Biodata";
@@ -22,6 +21,7 @@ import GridIcon from "../../../libs/components/icons/GridIcon";
 import MentionIcon from "../../../libs/components/icons/MentionIcon";
 import ReelsIcon from "../../../libs/components/icons/ReelsIcon";
 import SeriesIcon from "../../../libs/components/icons/SeriesIcon";
+import Tray from "../../../modules/story/components/Tray";
 
 function AccountProfileView() {
   const tabs = [

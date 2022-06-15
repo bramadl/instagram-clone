@@ -12,11 +12,11 @@ import Information from "../../../modules/account/components/profile/Information
 import MenuButton from "../../../modules/account/components/profile/MenuButton";
 import UsernameDropdown from "../../../modules/account/components/profile/UsernameDropdown";
 import PostImage from "../../../modules/post/components/Image";
-import Tray from "../../../modules/story/Tray";
 import ProfileNav from "../layouts/ProfileNav";
 import ProfileHeader from "../layouts/ProfileHeader";
 import ProfileHighlights from "../layouts/ProfileHighlights";
 import ProfileFeeds from "../layouts/ProfileFeeds";
+import Tray from "../../../modules/story/components/Tray";
 
 function PersonalProfileView() {
   const {

@@ -1,7 +1,6 @@
 import accounts from "./data/accounts.json";
 import highlights from "./data/highlights.json";
 import posts from "./data/posts.json";
-import stories from "./data/stories.json";
 
 const accountRepo = (httpClient) => ({
   async getAccountById(id) {
@@ -10,10 +9,6 @@ const accountRepo = (httpClient) => ({
 
   async getPostsById(id) {
     return posts;
-  },
-
-  async viewAccountStory(id) {
-    return stories;
   },
 
   async getAccountHighlights(id) {

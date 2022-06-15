@@ -1,6 +1,6 @@
 import React from "react";
 import Avatar from "../../../../libs/components/Avatar";
-import Tray from "../../../story/Tray";
+import Tray from "../../../story/components/Tray";
 
 function Cover(props) {
   const { name, cover } = props;
