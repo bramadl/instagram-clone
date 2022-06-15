@@ -1,0 +1,10 @@
+[
+  {
+    "id": 1,
+    "isWatched": true
+  },
+  {
+    "id": 2,
+    "isWatched": false
+  }
+]

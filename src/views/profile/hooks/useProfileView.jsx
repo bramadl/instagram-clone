@@ -7,8 +7,20 @@ import getPosts from "../../../modules/account/services/getPosts";
 import viewProfile from "../../../modules/account/services/viewProfile";
 import viewStory from "../../../modules/account/services/viewStory";
 
-// @TODO: dynamically evaluate props.id expression value.
-export default function useProfileView() {
+const defaultTabs = [
+  {
+    element: <GridIcon />,
+    name: "Posts",
+    onClick() {},
+  },
+  {
+    element: <MentionIcon />,
+    name: "TaggedPosts",
+    onClick() {},
+  },
+];
+
+export default function useProfileView(id, profileTabs = defaultTabs) {
   const [activeTab] = useState("Posts");
   const [profile, setProfile] = useState({});
   const [profilePosts, setProfilePosts] = useState([]);
@@ -17,48 +29,33 @@ export default function useProfileView() {
   const [hasUnseenTray, setHasUnseenTray] = useState(false);
 
   useEffect(() => {
-    const props = { id: 1 };
-    viewProfile(accountRepo, props)
+    viewProfile(accountRepo, { id })
       .then((profile) => setProfile(profile))
       .catch((error) => console.log(error));
-  }, []);
+  }, [id]);
 
   useEffect(() => {
-    const props = { id: 1 };
-    getPosts(accountRepo, props)
+    getPosts(accountRepo, { id })
       .then((posts) => setProfilePosts(posts))
       .catch((error) => console.log(error));
-  }, []);
+  }, [id]);
 
   useEffect(() => {
-    const props = { id: 1 };
-    viewStory(accountRepo, props)
+    viewStory(accountRepo, { id })
       .then((stories) => {
         setProfileStories(stories);
         setHasUnseenTray(stories.some((story) => story.isWatched));
       })
       .catch((error) => console.log(error));
-  }, []);
+  }, [id]);
 
   useEffect(() => {
-    const props = { id: 1 };
-    getHighlights(accountRepo, props)
+    getHighlights(accountRepo, { id })
       .then((highlights) => setProfileHighlights(highlights))
       .catch((error) => console.log(error));
-  }, []);
+  }, [id]);
 
-  const tabItems = [
-    {
-      element: <GridIcon />,
-      name: "Posts",
-      onClick() {},
-    },
-    {
-      element: <MentionIcon />,
-      name: "TaggedPosts",
-      onClick() {},
-    },
-  ];
+  const tabItems = [...profileTabs];
 
   return {
     activeTab,
@@ -67,11 +64,6 @@ export default function useProfileView() {
     profileStories,
     profileHighlights,
     hasUnseenTray,
-    // setProfile,
-    // setProfilePosts,
-    // setProfileStories,
-    // setProfileHighlights,
-    // setHasUnseenTray,
     tabItems,
-  }
+  };
 }

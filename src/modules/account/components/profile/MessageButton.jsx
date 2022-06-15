@@ -1,13 +1,13 @@
 import Button from "../../../../libs/components/Button";
 
-function EditButton() {
+function MessageButton() {
   return (
     <Button>
       <span className="font-bold text-sm">
-        Edit Profile
+        Message
       </span>
     </Button>
   );
 }
 
-export default EditButton;
+export default MessageButton;

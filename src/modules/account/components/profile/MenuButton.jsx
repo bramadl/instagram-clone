@@ -1,10 +1,15 @@
 import React from "react";
+import DotsIcon from "../../../../libs/components/icons/DotsIcon";
 import HamburgerIcon from "../../../../libs/components/icons/HamburgerIcon";
 
-function MenuButton() {
+function MenuButton(props) {
+  const { iconType } = props;
+
+  const iconElement = iconType === "dots" ? <DotsIcon /> : <HamburgerIcon />;
+  
   return (
     <button>
-      <HamburgerIcon />
+      {iconElement}
     </button>
   );
 }
