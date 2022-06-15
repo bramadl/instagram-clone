@@ -7,3 +7,10 @@
     @apply w-full h-screen flex items-center justify-center bg-[#EBEBEB];
   }
 }
+
+@layer utilities {
+  .border-gradient {
+    @apply p-0.5;
+    background: linear-gradient(180deg, #DE0046 0%, #F7A34B 100%);
+  }
+}
