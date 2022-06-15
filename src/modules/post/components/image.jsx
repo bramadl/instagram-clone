@@ -1,6 +1,6 @@
 function PostImage(props) {
-  const { aspectRatio, src } = props;
-  const aspectRatioClass = aspectRatio === "square" ? "aspect-square" : "aspect-[4/5]"
+  const { aspectRatio = "square", src } = props;
+  const aspectRatioClass = aspectRatio !== "square" ? "aspect-[4/5]" : "aspect-square";
   
   return (
     <img

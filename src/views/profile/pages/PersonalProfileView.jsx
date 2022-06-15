@@ -3,6 +3,7 @@ import React from "react";
 import useProfileView from "../hooks/useProfileView";
 
 import Avatar from "../../../libs/components/Avatar";
+import GlobalHeader from "../../../libs/components/GlobalHeader";
 import Tabs from "../../../libs/components/Tabs";
 import CarouselIcon from "../../../libs/components/icons/CarouselIcon";
 
@@ -22,7 +23,6 @@ import Tray from "../../../modules/story/components/Tray";
 import ProfileFeeds from "../layouts/ProfileFeeds";
 import ProfileHeader from "../layouts/ProfileHeader";
 import ProfileHighlights from "../layouts/ProfileHighlights";
-import AppNav from "../../layouts/AppNav";
 
 function PersonalProfileView() {
   const {
@@ -37,7 +37,7 @@ function PersonalProfileView() {
 
   return (
     <main>
-      <AppNav id="profile-nav">
+      <GlobalHeader id="profile-nav">
         <React.Fragment>
           <UsernameDropdown username={profile.username} />
 
@@ -46,7 +46,7 @@ function PersonalProfileView() {
             <MenuButton />
           </div>
         </React.Fragment>
-      </AppNav>
+      </GlobalHeader>
 
       <ProfileHeader
         profileAvatar={

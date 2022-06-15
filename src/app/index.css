@@ -6,6 +6,10 @@
   html, body {
     @apply w-full h-screen flex items-center justify-center bg-[#EBEBEB];
   }
+
+  .markdown-domain a {
+    color: #004C8B;
+  }
 }
 
 @layer utilities {

@@ -1,8 +1,10 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 import useProfileView from "../hooks/useProfileView";
 
 import Avatar from "../../../libs/components/Avatar";
+import GlobalHeader from "../../../libs/components/GlobalHeader";
 import Tabs from "../../../libs/components/Tabs";
 import CarouselIcon from "../../../libs/components/icons/CarouselIcon";
 import ChevronDownIcon from "../../../libs/components/icons/ChevronDownIcon";
@@ -27,7 +29,6 @@ import Tray from "../../../modules/story/components/Tray";
 import ProfileFeeds from "../layouts/ProfileFeeds";
 import ProfileHeader from "../layouts/ProfileHeader";
 import ProfileHighlights from "../layouts/ProfileHighlights";
-import AppNav from "../../layouts/AppNav";
 
 function AccountProfileView() {
   const tabs = [
@@ -68,12 +69,12 @@ function AccountProfileView() {
 
   return (
     <main>
-      <AppNav id="profile-nav">
+      <GlobalHeader id="profile-nav">
         <React.Fragment>
           <div className="flex-1 flex items-center justify-start ">
-            <a className="rotate-90" href="/">
+            <Link className="rotate-90" to="/">
               <ChevronDownIcon />
-            </a>
+            </Link>
           </div>
 
           <h1 className="flex-1 font-bold text-xl text-center">
@@ -85,7 +86,7 @@ function AccountProfileView() {
             <MenuButton iconType="dots" />
           </div>
         </React.Fragment>
-      </AppNav>
+      </GlobalHeader>
 
       <ProfileHeader
         profileAvatar={

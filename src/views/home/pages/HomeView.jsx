@@ -1,7 +1,9 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 import useHomeView from "../hooks/useHomeView";
 
+import GlobalHeader from "../../../libs/components/GlobalHeader";
 import InstagramIcon from "../../../libs/components/icons/InstagramIcon";
 
 import CheckMessageButton from "../../../modules/account/components/feeds/CheckMessageButton";
@@ -12,7 +14,6 @@ import TrayWithCover from "../../../modules/story/components/TrayWithCover";
 
 import Post from "../../../modules/post/components/Post";
 
-import AppNav from "../../layouts/AppNav";
 import HomeStories from "../layouts/HomeStories";
 
 function HomeView() {
@@ -20,12 +21,12 @@ function HomeView() {
 
   return (
     <main>
-      <AppNav id="home-nav">
+      <GlobalHeader id="home-nav">
         <React.Fragment>
           <div id="home-root-link">
-            <a href="/">
+            <Link to="/">
               <InstagramIcon />
-            </a>
+            </Link>
           </div>
 
           <div id="home-nav-menu" className="flex items-center gap-4">
@@ -34,7 +35,7 @@ function HomeView() {
             <CheckMessageButton />
           </div>
         </React.Fragment>
-      </AppNav>
+      </GlobalHeader>
 
       <HomeStories id="home-stories">
         {stories.map((story) => (
