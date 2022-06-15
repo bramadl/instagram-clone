@@ -1,5 +1,3 @@
-import React from "react";
-
 function Avatar(props) {
   const { alternate, src, size } = props;
 

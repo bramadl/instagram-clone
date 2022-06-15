@@ -1,5 +1,3 @@
-import React from "react";
-
 function ChevronDownIcon() {
   return (
     <div>

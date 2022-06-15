@@ -1,5 +1,3 @@
-import React from 'react'
-
 function Tabs(props) {
   const { activeTab, tabItems } = props;
 
