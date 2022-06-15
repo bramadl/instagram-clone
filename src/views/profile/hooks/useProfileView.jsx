@@ -1,11 +1,14 @@
 import { useEffect, useState } from "react";
+
 import GridIcon from "../../../libs/components/icons/GridIcon";
 import MentionIcon from "../../../libs/components/icons/MentionIcon";
+
 import accountRepo from "../../../modules/account/repository";
-import storyRepo from "../../../modules/story/repository";
 import getHighlights from "../../../modules/account/services/getHighlights";
 import getPosts from "../../../modules/account/services/getPosts";
 import viewProfile from "../../../modules/account/services/viewProfile";
+
+import storyRepo from "../../../modules/story/repository";
 import getStories from "../../../modules/story/services/getStories";
 
 const defaultTabs = [

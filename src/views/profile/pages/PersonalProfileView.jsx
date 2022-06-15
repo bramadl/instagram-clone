@@ -1,8 +1,11 @@
 import React from "react";
+
 import useProfileView from "../hooks/useProfileView";
+
 import Avatar from "../../../libs/components/Avatar";
 import Tabs from "../../../libs/components/Tabs";
 import CarouselIcon from "../../../libs/components/icons/CarouselIcon";
+
 import Cover from "../../../modules/account/components/highlight/Cover";
 import CreateButton from "../../../modules/account/components/highlight/CreateButton";
 import Biodata from "../../../modules/account/components/profile/Biodata";
@@ -11,12 +14,15 @@ import EditButton from "../../../modules/account/components/profile/EditButton";
 import Information from "../../../modules/account/components/profile/Information";
 import MenuButton from "../../../modules/account/components/profile/MenuButton";
 import UsernameDropdown from "../../../modules/account/components/profile/UsernameDropdown";
+
 import PostImage from "../../../modules/post/components/Image";
-import ProfileNav from "../layouts/ProfileNav";
+
+import Tray from "../../../modules/story/components/Tray";
+
+import ProfileFeeds from "../layouts/ProfileFeeds";
 import ProfileHeader from "../layouts/ProfileHeader";
 import ProfileHighlights from "../layouts/ProfileHighlights";
-import ProfileFeeds from "../layouts/ProfileFeeds";
-import Tray from "../../../modules/story/components/Tray";
+import ProfileNav from "../layouts/ProfileNav";
 
 function PersonalProfileView() {
   const {

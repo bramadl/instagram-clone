@@ -1,5 +1,3 @@
-import React from "react";
-
 function ProfileHeader(props) {
   const { profileAvatar, profileInformation, profileBiodata } = props;
   return (

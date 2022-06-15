@@ -1,5 +1,3 @@
-import React from "react";
-
 function ProfileFeeds(props) {
   const { children, profileTabs } = props;
   

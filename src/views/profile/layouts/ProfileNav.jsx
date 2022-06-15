@@ -1,5 +1,3 @@
-import React from 'react'
-
 function ProfileNav(props) {
   const { children } = props;
   

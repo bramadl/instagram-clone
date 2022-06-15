@@ -1,5 +1,3 @@
-import React from "react";
-
 function ProfileHighlights(props) {
   const { children } = props;
   

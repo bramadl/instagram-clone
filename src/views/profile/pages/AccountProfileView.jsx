@@ -1,27 +1,33 @@
 import React, { useState } from "react";
+
 import useProfileView from "../hooks/useProfileView";
-import EmailButton from "../../../modules/account/components/profile/EmailButton";
-import FollowButton from "../../../modules/account/components/profile/FollowButton";
-import MessageButton from "../../../modules/account/components/profile/MessageButton";
-import NotifyUpdateButton from "../../../modules/account/components/profile/NotifyUpdateButton";
-import MenuButton from "../../../modules/account/components/profile/MenuButton";
-import ChevronDownIcon from "../../../libs/components/icons/ChevronDownIcon";
-import ProfileNav from "../layouts/ProfileNav";
-import ProfileHeader from "../layouts/ProfileHeader";
+
 import Avatar from "../../../libs/components/Avatar";
-import Information from "../../../modules/account/components/profile/Information";
-import Biodata from "../../../modules/account/components/profile/Biodata";
-import ProfileHighlights from "../layouts/ProfileHighlights";
-import Cover from "../../../modules/account/components/highlight/Cover";
-import ProfileFeeds from "../layouts/ProfileFeeds";
 import Tabs from "../../../libs/components/Tabs";
 import CarouselIcon from "../../../libs/components/icons/CarouselIcon";
-import PostImage from "../../../modules/post/components/Image";
+import ChevronDownIcon from "../../../libs/components/icons/ChevronDownIcon";
 import GridIcon from "../../../libs/components/icons/GridIcon";
 import MentionIcon from "../../../libs/components/icons/MentionIcon";
 import ReelsIcon from "../../../libs/components/icons/ReelsIcon";
 import SeriesIcon from "../../../libs/components/icons/SeriesIcon";
+
+import Cover from "../../../modules/account/components/highlight/Cover";
+import Biodata from "../../../modules/account/components/profile/Biodata";
+import EmailButton from "../../../modules/account/components/profile/EmailButton";
+import FollowButton from "../../../modules/account/components/profile/FollowButton";
+import Information from "../../../modules/account/components/profile/Information";
+import MenuButton from "../../../modules/account/components/profile/MenuButton";
+import MessageButton from "../../../modules/account/components/profile/MessageButton";
+import NotifyUpdateButton from "../../../modules/account/components/profile/NotifyUpdateButton";
+
+import PostImage from "../../../modules/post/components/Image";
+
 import Tray from "../../../modules/story/components/Tray";
+
+import ProfileFeeds from "../layouts/ProfileFeeds";
+import ProfileHeader from "../layouts/ProfileHeader";
+import ProfileHighlights from "../layouts/ProfileHighlights";
+import ProfileNav from "../layouts/ProfileNav";
 
 function AccountProfileView() {
   const tabs = [
