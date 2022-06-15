@@ -1,5 +1,4 @@
 import Avatar from "../../../libs/components/Avatar";
-import { toLowerCase } from "../../../libs/utils/format/string";
 
 import Tray from "./Tray";
 
@@ -15,7 +14,7 @@ function TrayWithCover(props) {
           size="lg"
         />
       </Tray>
-      <p className="text-sm">{toLowerCase(username || account.username)}</p>
+      <p className="text-sm">{username || account.username}</p>
     </>
   );
 }

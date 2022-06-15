@@ -4,7 +4,7 @@
 
 @layer base {
   html, body {
-    @apply w-full h-screen flex items-center justify-center bg-[#EBEBEB];
+    @apply w-full h-screen flex items-start justify-center bg-[#EBEBEB];
   }
 
   .markdown-domain a {

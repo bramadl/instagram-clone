@@ -4,6 +4,7 @@ import useProfileView from "../hooks/useProfileView";
 
 import Avatar from "../../../libs/components/Avatar";
 import GlobalHeader from "../../../libs/components/GlobalHeader";
+import GlobalNav from "../../../libs/components/GlobalNav";
 import Tabs from "../../../libs/components/Tabs";
 import CarouselIcon from "../../../libs/components/icons/CarouselIcon";
 
@@ -112,6 +113,8 @@ function PersonalProfileView() {
           </figure>
         ))}
       </ProfileFeeds>
+
+      <GlobalNav />
     </main>
   );
 }

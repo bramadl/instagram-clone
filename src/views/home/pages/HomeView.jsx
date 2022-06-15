@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import useHomeView from "../hooks/useHomeView";
 
 import GlobalHeader from "../../../libs/components/GlobalHeader";
+import GlobalNav from "../../../libs/components/GlobalNav";
 import InstagramIcon from "../../../libs/components/icons/InstagramIcon";
 
 import CheckMessageButton from "../../../modules/account/components/feeds/CheckMessageButton";
@@ -53,6 +54,8 @@ function HomeView() {
           <Post key={post.id} profile={profile} post={post} />
         ))}
       </section>
+
+      <GlobalNav />
     </main>
   );
 }

@@ -15,7 +15,7 @@ function GlobalNav() {
   } = useHomeView(1);
 
   return (
-    <nav className="absolute bottom-0 left-0 w-full h-16 flex items-center justify-center bg-white border-t border-[#DADADA] p-4">
+    <nav className="sticky bottom-0 left-0 w-full h-16 flex items-center justify-center bg-white border-t border-[#DADADA] p-4">
       <ul className="flex-1 flex items-center justify-between">
         <li>
           <Link to="/">
