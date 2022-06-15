@@ -22,7 +22,7 @@ import Tray from "../../../modules/story/components/Tray";
 import ProfileFeeds from "../layouts/ProfileFeeds";
 import ProfileHeader from "../layouts/ProfileHeader";
 import ProfileHighlights from "../layouts/ProfileHighlights";
-import ProfileNav from "../layouts/ProfileNav";
+import AppNav from "../../layouts/AppNav";
 
 function PersonalProfileView() {
   const {
@@ -37,7 +37,7 @@ function PersonalProfileView() {
 
   return (
     <main>
-      <ProfileNav>
+      <AppNav id="profile-nav">
         <React.Fragment>
           <UsernameDropdown username={profile.username} />
 
@@ -46,7 +46,7 @@ function PersonalProfileView() {
             <MenuButton />
           </div>
         </React.Fragment>
-      </ProfileNav>
+      </AppNav>
 
       <ProfileHeader
         profileAvatar={

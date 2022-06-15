@@ -9,7 +9,7 @@ import getPosts from "../../../modules/account/services/getPosts";
 import viewProfile from "../../../modules/account/services/viewProfile";
 
 import storyRepo from "../../../modules/story/repository";
-import getStories from "../../../modules/story/services/getStories";
+import getStoriesByUserId from "../../../modules/story/services/getStoriesByUserId";
 
 const defaultTabs = [
   {
@@ -45,7 +45,7 @@ export default function useProfileView(id, profileTabs = defaultTabs) {
   }, [id]);
 
   useEffect(() => {
-    getStories(storyRepo, { id })
+    getStoriesByUserId(storyRepo, { id })
       .then((stories) => {
         setProfileStories(stories);
         setHasUnseenTray(stories.some((story) => story.isWatched));

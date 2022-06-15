@@ -1,0 +1,39 @@
+[
+  {
+    "id": 1,
+    "account": {
+      "avatar": "https://images.unsplash.com/photo-1592754862816-1a21a4ea2281?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80",
+      "username": "Ruffles"
+    },
+    "galleries": [
+      {
+        "id": 1,
+        "src": "https://images.unsplash.com/photo-1450778869180-41d0601e046e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2186&q=80",
+        "aspectRatio": "square"
+      },
+      {
+        "id": 2,
+        "src": "https://images.unsplash.com/photo-1583337130417-3346a1be7dee?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=928&q=80",
+        "aspectRatio": "square"
+      }
+    ],
+    "likes_count": 100,
+    "caption": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae, dicta! Unde et iure placeat commodi maiores ipsa alias nostrum totam, similique quos doloribus vel facere!"
+  },
+  {
+    "id": 2,
+    "account": {
+      "avatar": "https://images.unsplash.com/photo-1634656833613-96e4188bb37e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80",
+      "username": "tonystark"
+    },
+    "galleries": [
+      {
+        "id": 1,
+        "src": "https://images.unsplash.com/photo-1626278664285-f796b9ee7806?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1674&q=80",
+        "aspectRatio": "portrait"
+      }
+    ],
+    "likes_count": 2144562,
+    "caption": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. At, distinctio."
+  }
+]

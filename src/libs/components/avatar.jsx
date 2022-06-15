@@ -1,5 +1,5 @@
 function Avatar(props) {
-  const { alternate, src, size } = props;
+  const { alternate, src, size, useBorder = true } = props;
 
   let avatarSize
   switch (size) {
@@ -9,6 +9,12 @@ function Avatar(props) {
     case "lg":
       avatarSize = "w-16 h-16";
       break;
+    case "sm":
+      avatarSize = "w-8 h-8";
+      break;
+    case "xs":
+      avatarSize = "w-6 h-6";
+      break;
     default:
       avatarSize = "";
   }
@@ -16,7 +22,7 @@ function Avatar(props) {
   return (
     <img
       alt={alternate}
-      className={`border-2 border-white ${avatarSize} rounded-full object-cover`}
+      className={`${useBorder && "border-2 border-white"} ${avatarSize} rounded-full object-cover`}
       src={src}
     />
   );

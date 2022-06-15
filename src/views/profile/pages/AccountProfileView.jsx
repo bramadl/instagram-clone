@@ -27,7 +27,7 @@ import Tray from "../../../modules/story/components/Tray";
 import ProfileFeeds from "../layouts/ProfileFeeds";
 import ProfileHeader from "../layouts/ProfileHeader";
 import ProfileHighlights from "../layouts/ProfileHighlights";
-import ProfileNav from "../layouts/ProfileNav";
+import AppNav from "../../layouts/AppNav";
 
 function AccountProfileView() {
   const tabs = [
@@ -68,7 +68,7 @@ function AccountProfileView() {
 
   return (
     <main>
-      <ProfileNav>
+      <AppNav id="profile-nav">
         <React.Fragment>
           <div className="flex-1 flex items-center justify-start ">
             <a className="rotate-90" href="/">
@@ -85,7 +85,7 @@ function AccountProfileView() {
             <MenuButton iconType="dots" />
           </div>
         </React.Fragment>
-      </ProfileNav>
+      </AppNav>
 
       <ProfileHeader
         profileAvatar={

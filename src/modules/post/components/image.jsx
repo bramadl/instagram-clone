@@ -1,10 +1,11 @@
 function PostImage(props) {
-  const { src } = props;
+  const { aspectRatio, src } = props;
+  const aspectRatioClass = aspectRatio === "square" ? "aspect-square" : "aspect-[4/5]"
   
   return (
     <img
       alt=""
-      className="w-full aspect-square object-cover"
+      className={`flex-shrink-0 w-full object-cover ${aspectRatioClass}`}
       src={src}
     />
   )

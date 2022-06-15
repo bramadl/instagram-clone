@@ -1,0 +1,88 @@
+[
+  {
+    "id": 1,
+    "account": {
+      "id": 1,
+      "username": "Klein",
+      "avatar": "https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80"
+    },
+    "stories": [
+      {
+        "id": 1,
+        "isWatched": true
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "account": {
+      "id": 2,
+      "username": "Kent",
+      "avatar": "https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80"
+    },
+    "stories": [
+      {
+        "id": 1,
+        "isWatched": false
+      },
+      {
+        "id": 2,
+        "isWatched": true
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "account": {
+      "id": 3,
+      "username": "Chen",
+      "avatar": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
+    },
+    "stories": [
+      {
+        "id": 1,
+        "isWatched": false
+      },
+      {
+        "id": 2,
+        "isWatched": false
+      },
+      {
+        "id": 3,
+        "isWatched": true
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "account": {
+      "id": 4,
+      "username": "Sutton",
+      "avatar": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
+    },
+    "stories": [
+      {
+        "id": 1,
+        "isWatched": true
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "account": {
+      "id": 5,
+      "username": "Gaines",
+      "avatar": "https://images.unsplash.com/photo-1531427186611-ecfd6d936c79?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
+    },
+    "stories": [
+      {
+        "id": 1,
+        "isWatched": false
+      },
+      {
+        "id": 2,
+        "isWatched": false
+      }
+    ]
+  }
+]

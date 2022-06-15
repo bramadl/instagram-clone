@@ -1,0 +1,42 @@
+function PlusIcon() {
+  return (
+    <svg
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <rect width="24" height="24" fill="white" />
+      <rect
+        x="3"
+        y="3"
+        width="18"
+        height="18"
+        rx="5"
+        stroke="black"
+        strokeWidth="1.8"
+      />
+      <line
+        x1="12.1"
+        y1="6.9"
+        x2="12.1"
+        y2="17.1"
+        stroke="black"
+        strokeWidth="1.8"
+        strokeLinecap="round"
+      />
+      <line
+        x1="6.9"
+        y1="11.8"
+        x2="17.1"
+        y2="11.8"
+        stroke="black"
+        strokeWidth="1.8"
+        strokeLinecap="round"
+      />
+    </svg>
+  );
+}
+
+export default PlusIcon;
